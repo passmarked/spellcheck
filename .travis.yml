@@ -1,6 +1,6 @@
 before_install:
   - sudo apt-get install -y aspell hunspell
-  - sudo apt-get install -y myspell-en-us hunspell-en-us myspell-en-za myspell-en-gb
+  - sudo apt-get install -y myspell-en-us myspell-en-za myspell-en-gb
 language: node_js
 env:
   - CXX=g++-4.8
