@@ -1,4 +1,4 @@
-RUN apt-get install -y aspell aspell-* hunspell
+RUN apt-get install -y aspell hunspell
 
 # install languages to be used
 RUN apt-get install -y hunspell-an
