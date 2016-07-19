@@ -13,18 +13,14 @@
   "author": "Passmarked <devops@passmarked.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "aspell": "^0.1.0",
     "async": "^0.9.0",
     "cheerio": "^0.18.0",
-    "jsdom": "*",
     "passmarked": "*",
     "string": "^3.0.0",
     "underscore": "^1.8.3",
     "when": "^3.6.3",
     "yslow": "^3.1.0",
-    "nodehun": "^2.0.8",
-    "natural": "^0.2.1",
-    "hunspell-spellchecker": "^1.0.2"
+    "natural": "^0.2.1"
   },
   "devDependencies": {
     "chai": "^1.10.0",
