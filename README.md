@@ -162,6 +162,19 @@ apt-get install -y myspell-nr
 apt-get install -y myspell-sw
 ```
 
+We also recommend you install dictionaries from the SCOWL project, [Passmarked](https://passmarked.com?source=github&repo=spellcheck) hosts a build for local build servers as well - [package.passmarked.com/dictionaries/scowl/2016/06/build.zip](https://package.passmarked.com/dictionaries/scowl/2016/06/build.zip).
+
+The libraries can be installed using:
+
+```
+mkdir -p /Library/Spelling
+wget -O /tmp/build.zip https://package.passmarked.com/dictionaries/scowl/2016/06/build.zip
+unzip /tmp/build.zip -d /Library/Spelling
+rm /tmp/build.zip || true
+```
+
+`/Library/Spelling` is checked as a location for libraries by default for Hunspell and Aspell.
+
 ## Rules
 
 Rules represent checks that occur in this module, all of these rules have a **UID** which can be used to check for specific rules. For the structure and more details see the [Wiki](https://github.com/passmarked/passmarked/wiki) page on [Rules](https://github.com/passmarked/passmarked/wiki/Create).
