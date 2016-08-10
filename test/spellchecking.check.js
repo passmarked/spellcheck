@@ -19,7 +19,7 @@ describe('spellchecking', function() {
       // run the rules
       spellCheck.check({ 
 
-        content:    content,
+        content:    content.split('\n'),
         language:   'en',
         keywords:   []
 
@@ -49,7 +49,7 @@ describe('spellchecking', function() {
       // run the rules
       spellCheck.check({ 
 
-        content:    content,
+        content:    content.split('\n'),
         language:   'en',
         keywords:   []
 
@@ -79,38 +79,8 @@ describe('spellchecking', function() {
       // run the rules
       spellCheck.check({ 
 
-        content:    content,
+        content:    content.split('\n'),
         language:   'en',
-        keywords:   []
-
-      } , function(err, mistakes) {
-
-        // check if defined
-        if(err) assert.fail('Spellcheck function returned a error')
-        if(!mistakes) assert.fail('Spelling mistakes returned was null/undefined')
-
-        // must be 0
-        if(mistakes.length == 0)
-          assert.fail('was expecting a spellcheck from correct spelling sample file');
-
-        // done
-        done()
-
-      });
-
-    });
-
-    // handle the error output
-    it('should report a error if the correct piece of test was tested with EN-US instead', function(done) {
-
-      // read in the html sample
-      var content = fs.readFileSync('./samples/spellcheck.right.txt').toString('utf8');
-
-      // run the rules
-      spellCheck.check({ 
-
-        content:    content,
-        language:   'en-us',
         keywords:   []
 
       } , function(err, mistakes) {
@@ -133,10 +103,3 @@ describe('spellchecking', function() {
   });
 
 });
-
-
-
-
-
-
-

@@ -31,12 +31,13 @@
   "dependencies": {
     "async": "^0.9.0",
     "cheerio": "^0.18.0",
+    "natural": "^0.2.1",
     "passmarked": "*",
+    "request": "^2.74.0",
     "string": "^3.0.0",
     "underscore": "^1.8.3",
     "when": "^3.6.3",
-    "yslow": "^3.1.0",
-    "natural": "^0.2.1"
+    "yslow": "^3.1.0"
   },
   "devDependencies": {
     "chai": "^1.10.0",
