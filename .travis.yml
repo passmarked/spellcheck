@@ -1,5 +1,5 @@
 before_install:
-  - sudo apt-get install -y aspell hunspell hunspell-en-ca hunspell-en-med hunspell-en-us
+  - sudo apt-get install -y aspell hunspell hunspell-en-ca hunspell-en-us
   - sudo apt-get install -y myspell-en-us myspell-en-za myspell-en-gb
   - sudo apt-get install -y scowl
 language: node_js
