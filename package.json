@@ -1,6 +1,6 @@
 {
   "name": "@passmarked/spellcheck",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Rules related to checking for spelling mistakes on a page",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,7 @@
   "dependencies": {
     "async": "^0.9.0",
     "cheerio": "^0.18.0",
+    "cld": "^2.4.6",
     "natural": "^0.2.1",
     "passmarked": "*",
     "request": "^2.74.0",

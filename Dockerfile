@@ -1,9 +1,10 @@
+# install the actual 
 RUN apt-get install -y aspell hunspell
 
 # install required utils
 RUN apt-get install -y tofrodos dos2unix
 
-# install languages to be used
+# install the hunspell dictionaries
 RUN apt-get install -y hunspell-an
 RUN apt-get install -y hunspell-de-de
 RUN apt-get install -y hunspell-fr
@@ -28,6 +29,7 @@ RUN apt-get install -y hunspell-uz
 RUN apt-get install -y hunspell-ne
 RUN apt-get install -y hunspell-vi
 
+# install the dictionaries from myspell
 RUN apt-get install -y myspell-af
 RUN apt-get install -y myspell-en-us
 RUN apt-get install -y myspell-en-za
@@ -62,11 +64,16 @@ RUN apt-get install -y myspell-nl
 RUN apt-get install -y myspell-nr
 RUN apt-get install -y myspell-sw
 
+# install the scrowl modules from the repos
 RUN apt-get install -y scowl
 
+# make sure we can actually download and unzip the packages
 RUN apt-get install -y unzip wget
 
+# make sure the folder exists for our custom dictionaries
 RUN mkdir -p /Library/Spelling
-RUN wget -O /tmp/build.zip https://package.passmarked.com/dictionaries/scowl/2016/06/build.zip
+
+# download SCOWL dictionary
+RUN wget -O /tmp/build.zip https://package.passmarked.com/dictionaries/scowl-20160910.zip
 RUN unzip /tmp/build.zip -d /Library/Spelling
 RUN rm /tmp/build.zip || true
