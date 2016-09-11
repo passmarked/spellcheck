@@ -14,8 +14,7 @@ The module firstly checks if any language tag is present, if none presents a rul
 
 The rules checked in this module are:
 
-* **language.attribute** - No language attribute was provided.
-* **language.unknown** - The given language was not in the list of valid BCP 47 language tags.
+* **unknown** - The given language was not in the list of valid BCP 47 language tags.
 * **title** - Mistake found in the title of page
 * **description** - Mistake found in description of the page
 * **keywords** - Mistake found in page keywords
