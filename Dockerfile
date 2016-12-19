@@ -17,6 +17,7 @@ RUN apt-get install -y hunspell-br
 RUN apt-get install -y hunspell-en-ca
 RUN apt-get install -y hunspell-en-med
 RUN apt-get install -y hunspell-en-us
+RUN apt-get install -y hunspell-en-za
 RUN apt-get install -y hunspell-eu-es
 RUN apt-get install -y hunspell-gl-es
 RUN apt-get install -y hunspell-da
@@ -29,40 +30,38 @@ RUN apt-get install -y hunspell-uz
 RUN apt-get install -y hunspell-ne
 RUN apt-get install -y hunspell-vi
 
-# install the dictionaries from myspell
-RUN apt-get install -y myspell-af
-RUN apt-get install -y myspell-en-us
-RUN apt-get install -y myspell-en-za
-RUN apt-get install -y myspell-he
+# install the dictionaries from hunspell
+RUN apt-get install -y hunspell-af
+RUN apt-get install -y hunspell-he
 RUN apt-get install -y myspell-ns
-RUN apt-get install -y myspell-th
-RUN apt-get install -y myspell-hr
-RUN apt-get install -y myspell-pl
-RUN apt-get install -y myspell-tl
-RUN apt-get install -y myspell-ca
-RUN apt-get install -y myspell-eo
-RUN apt-get install -y myspell-hu
+RUN apt-get install -y hunspell-th
+RUN apt-get install -y hunspell-hr
+RUN apt-get install -y hunspell-pl
+RUN apt-get install -y hunspell-tl
+RUN apt-get install -y hunspell-ca
+RUN apt-get install -y hunspell-eo
+RUN apt-get install -y hunspell-hu
 RUN apt-get install -y myspell-pt
 RUN apt-get install -y myspell-tn
-RUN apt-get install -y myspell-cs
-RUN apt-get install -y myspell-es
+RUN apt-get install -y hunspell-cs
+RUN apt-get install -y hunspell-es
 RUN apt-get install -y myspell-hy
-RUN apt-get install -y myspell-pt-br
-RUN apt-get install -y myspell-da
-RUN apt-get install -y myspell-et
-RUN apt-get install -y myspell-it
+RUN apt-get install -y hunspell-pt-br
+RUN apt-get install -y hunspell-da
+RUN apt-get install -y hunspell-et
+RUN apt-get install -y hunspell-it
 RUN apt-get install -y myspell-ts
-RUN apt-get install -y myspell-ru
-RUN apt-get install -y myspell-uk
-RUN apt-get install -y myspell-sk
-RUN apt-get install -y myspell-uk
+RUN apt-get install -y hunspell-ru
+RUN apt-get install -y hunspell-uk
+RUN apt-get install -y hunspell-sk
+RUN apt-get install -y hunspell-uk
 RUN apt-get install -y myspell-ga
-RUN apt-get install -y myspell-nl
-RUN apt-get install -y myspell-en-au
-RUN apt-get install -y myspell-en-gb
-RUN apt-get install -y myspell-nl
+RUN apt-get install -y hunspell-nl
+RUN apt-get install -y hunspell-en-au
+RUN apt-get install -y hunspell-en-gb
+RUN apt-get install -y hunspell-nl
 RUN apt-get install -y myspell-nr
-RUN apt-get install -y myspell-sw
+RUN apt-get install -y hunspell-sw
 
 # install the scrowl modules from the repos
 RUN apt-get install -y scowl
