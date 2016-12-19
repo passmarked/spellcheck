@@ -16,12 +16,20 @@ describe('spellchecking', function() {
       // read in the html sample
       var content = fs.readFileSync('./samples/spellcheck.wrong.txt').toString('utf8');
 
+      // handle the payload
+      var payload = passmarked.createPayload({
+
+        url: 'https://example.com'
+
+      }, null, content.toString())
+
       // run the rules
       spellCheck.check({ 
 
         content:    content.split('\n'),
         language:   'en',
-        keywords:   [ 'blokshouldskip.com' ]
+        keywords:   [ 'blokshouldskip.com' ],
+        payload:    payload
 
       } , function(err, mistakes) {
 
@@ -70,12 +78,20 @@ describe('spellchecking', function() {
       // read in the html sample
       var content = fs.readFileSync('./samples/spellcheck.wrong.txt').toString('utf8');
 
+      // handle the payload
+      var payload = passmarked.createPayload({
+
+        url: 'https://example.com'
+
+      }, null, content.toString())
+
       // run the rules
       spellCheck.check({ 
 
         content:    content.split('\n'),
         language:   'en',
-        keywords:   [ 'tht' ]
+        keywords:   [ 'tht' ],
+        payload:    payload
 
       } , function(err, mistakes) {
 
@@ -124,12 +140,20 @@ describe('spellchecking', function() {
       // read in the html sample
       var content = fs.readFileSync('./samples/spellcheck.wrong.txt').toString('utf8');
 
+      // handle the payload
+      var payload = passmarked.createPayload({
+
+        url: 'https://example.com'
+
+      }, null, content.toString())
+
       // run the rules
       spellCheck.check({ 
 
         content:    content.split('\n'),
         language:   'en',
-        keywords:   [ 'blok' ]
+        keywords:   [ 'blok' ],
+        payload:    payload
 
       } , function(err, mistakes) {
 
@@ -178,12 +202,20 @@ describe('spellchecking', function() {
       // read in the html sample
       var content = fs.readFileSync('./samples/spellcheck.right.txt').toString('utf8');
 
+      // handle the payload
+      var payload = passmarked.createPayload({
+
+        url: 'https://example.com'
+
+      }, null, content.toString())
+
       // run the rules
       spellCheck.check({ 
 
         content:    content.split('\n'),
         language:   'en',
-        keywords:   []
+        keywords:   [],
+        payload:    payload
 
       } , function(err, mistakes) {
 
@@ -208,12 +240,20 @@ describe('spellchecking', function() {
       // read in the html sample
       var content = fs.readFileSync('./samples/spellcheck.big.txt').toString('utf8');
 
+      // handle the payload
+      var payload = passmarked.createPayload({
+
+        url: 'https://example.com'
+
+      }, null, content.toString())
+
       // run the rules
       spellCheck.check({ 
 
         content:    content.split('\n'),
         language:   'en',
-        keywords:   []
+        keywords:   [],
+        payload:    payload
 
       } , function(err, mistakes) {
 
@@ -238,12 +278,20 @@ describe('spellchecking', function() {
       // read in the html sample
       var content = fs.readFileSync('./samples/spellcheck.wrong.txt').toString('utf8');
 
+      // handle the payload
+      var payload = passmarked.createPayload({
+
+        url: 'https://example.com'
+
+      }, null, content.toString())
+
       // run the rules
       spellCheck.check({ 
 
         content:    content.split('\n'),
         language:   'en',
-        keywords:   []
+        keywords:   [],
+        payload:    payload
 
       } , function(err, mistakes) {
 
