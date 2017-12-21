@@ -1,3 +1,6 @@
+# update
+RUN apt-get update
+
 # install the actual 
 RUN apt-get install -y aspell hunspell
 
