@@ -8,63 +8,64 @@ RUN apt-get install -y aspell hunspell
 RUN apt-get install -y tofrodos dos2unix
 
 # install the hunspell dictionaries
-RUN apt-get install -y hunspell-an
-RUN apt-get install -y hunspell-de-de
-RUN apt-get install -y hunspell-fr
-RUN apt-get install -y hunspell-fr-comprehensive
-RUN apt-get install -y hunspell-ar
-RUN apt-get install -y hunspell-ru
-RUN apt-get install -y hunspell-be
-RUN apt-get install -y hunspell-se
-RUN apt-get install -y hunspell-br
-RUN apt-get install -y hunspell-en-ca
-RUN apt-get install -y hunspell-en-med
-RUN apt-get install -y hunspell-en-us
-RUN apt-get install -y hunspell-en-za
-RUN apt-get install -y hunspell-eu-es
-RUN apt-get install -y hunspell-gl-es
-RUN apt-get install -y hunspell-da
-RUN apt-get install -y hunspell-hu
-RUN apt-get install -y hunspell-kk
-RUN apt-get install -y hunspell-ko
-RUN apt-get install -y hunspell-de-ch
-RUN apt-get install -y hunspell-ml
-RUN apt-get install -y hunspell-uz
-RUN apt-get install -y hunspell-ne
-RUN apt-get install -y hunspell-vi
+RUN apt-get install -y hunspell-an || true
+RUN apt-get install -y hunspell-de-de || true
+RUN apt-get install -y hunspell-fr || true
+RUN apt-get install -y hunspell-fr-comprehensive || true
+RUN apt-get install -y hunspell-ar || true
+RUN apt-get install -y hunspell-ru || true
+RUN apt-get install -y hunspell-be || true
+RUN apt-get install -y hunspell-se || true
+RUN apt-get install -y hunspell-br || true
+RUN apt-get install -y hunspell-en-ca || true
+RUN apt-get install -y hunspell-en-med || true
+RUN apt-get install -y hunspell-en-us || true
+RUN apt-get install -y hunspell-en-za || true
+RUN apt-get install -y myspell-en-za || true
+RUN apt-get install -y hunspell-eu-es || true
+RUN apt-get install -y hunspell-gl-es || true
+RUN apt-get install -y hunspell-da || true
+RUN apt-get install -y hunspell-hu || true
+RUN apt-get install -y hunspell-kk || true
+RUN apt-get install -y hunspell-ko || true
+RUN apt-get install -y hunspell-de-ch || true
+RUN apt-get install -y hunspell-ml || true
+RUN apt-get install -y hunspell-uz || true
+RUN apt-get install -y hunspell-ne || true
+RUN apt-get install -y hunspell-vi || true
 
 # install the dictionaries from hunspell
-RUN apt-get install -y hunspell-af
-RUN apt-get install -y hunspell-he
-RUN apt-get install -y myspell-ns
-RUN apt-get install -y hunspell-th
-RUN apt-get install -y hunspell-hr
-RUN apt-get install -y hunspell-pl
-RUN apt-get install -y hunspell-tl
-RUN apt-get install -y hunspell-ca
-RUN apt-get install -y hunspell-eo
-RUN apt-get install -y hunspell-hu
-RUN apt-get install -y myspell-pt
-RUN apt-get install -y myspell-tn
-RUN apt-get install -y hunspell-cs
-RUN apt-get install -y hunspell-es
-RUN apt-get install -y myspell-hy
-RUN apt-get install -y hunspell-pt-br
-RUN apt-get install -y hunspell-da
-RUN apt-get install -y hunspell-et
-RUN apt-get install -y hunspell-it
-RUN apt-get install -y myspell-ts
-RUN apt-get install -y hunspell-ru
-RUN apt-get install -y hunspell-uk
-RUN apt-get install -y hunspell-sk
-RUN apt-get install -y hunspell-uk
-RUN apt-get install -y myspell-ga
-RUN apt-get install -y hunspell-nl
-RUN apt-get install -y hunspell-en-au
-RUN apt-get install -y hunspell-en-gb
-RUN apt-get install -y hunspell-nl
-RUN apt-get install -y myspell-nr
-RUN apt-get install -y hunspell-sw
+RUN apt-get install -y hunspell-af || true
+RUN apt-get install -y hunspell-he || true
+RUN apt-get install -y myspell-ns || true
+RUN apt-get install -y hunspell-th || true
+RUN apt-get install -y hunspell-hr || true
+RUN apt-get install -y hunspell-pl || true
+RUN apt-get install -y hunspell-tl || true
+RUN apt-get install -y hunspell-ca || true
+RUN apt-get install -y hunspell-eo || true
+RUN apt-get install -y hunspell-hu || true
+RUN apt-get install -y myspell-pt || true
+RUN apt-get install -y myspell-tn || true
+RUN apt-get install -y hunspell-cs || true
+RUN apt-get install -y hunspell-es || true
+RUN apt-get install -y myspell-hy || true
+RUN apt-get install -y hunspell-pt-br || true
+RUN apt-get install -y hunspell-da || true
+RUN apt-get install -y hunspell-et || true
+RUN apt-get install -y hunspell-it || true
+RUN apt-get install -y myspell-ts || true
+RUN apt-get install -y hunspell-ru || true
+RUN apt-get install -y hunspell-uk || true
+RUN apt-get install -y hunspell-sk || true
+RUN apt-get install -y hunspell-uk || true
+RUN apt-get install -y myspell-ga || true
+RUN apt-get install -y hunspell-nl || true
+RUN apt-get install -y hunspell-en-au || true
+RUN apt-get install -y hunspell-en-gb || true
+RUN apt-get install -y hunspell-nl || true
+RUN apt-get install -y myspell-nr || true
+RUN apt-get install -y hunspell-sw || true
 
 # install the scrowl modules from the repos
 RUN apt-get install -y scowl
