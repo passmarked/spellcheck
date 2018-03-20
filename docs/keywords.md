@@ -1,4 +1,4 @@
-Although not that widely used anymore in searh engines, `keywords` can provide more tags for searching. It is thus important that these keywords are spelled correctly.
+Although not that widely used anymore in search engines, `keywords` can provide more tags for searching. It is thus important that these keywords are spelled correctly.
 
 Spelling mistakes were found in the:
 

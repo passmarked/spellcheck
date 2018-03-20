@@ -4,7 +4,7 @@
 
 [Passmarked](http://passmarked.com) is a suite of tests that can be run against any page/website to identify issues with parity to most online tools in one package.
 
-The [Terminal Client](http://npmjs.org/package/passmarked) is intended for use by developers to integrate into their workflow/CI servers but also integrate into their own application that might need to test websites and provide realtime feedback.
+The [Terminal Client](http://npmjs.org/package/passmarked) is intended for use by developers to integrate into their workflow/CI servers but also integrate into their own application that might need to test websites and provide real time feedback.
 
 All of the checks on [Passmarked](http://passmarked.com) can be voted on importance and are [open-sourced](http://github.com/passmarked/suite), to encourage community involvement in fixing and adding new rules. We are building the living Web Standard and love any [contributions](#contributing).
 
@@ -41,7 +41,7 @@ The request will then expect one of the following keywords back:
 
 ## Running
 
-The rules are checked everytime a url is run through Passmarked or our API. To run using the hosted system head to [passmarked.com](http://passmarked.com) or our [Terminal Client](http://npmjs.org/package/passmarked) use:
+The rules are checked every time a url is run through Passmarked or our API. To run using the hosted system head to [passmarked.com](http://passmarked.com) or our [Terminal Client](http://npmjs.org/package/passmarked) use:
 
 ```bash
 npm install -g passmarked
@@ -107,7 +107,7 @@ passmarked.createRunner(
 
 ## Dependencies
 
-The module pulls all available dictionaries from the system that are myspell/hunspell compatible. The module also calls the native module of hunspell to handle parsing and validating the words/grammer given.
+The module pulls all available dictionaries from the system that are myspell/hunspell compatible. The module also calls the native module of hunspell to handle parsing and validating the words/grammar given.
 
 For the basics the following must be installed, this will only check the default language on the system:
 
